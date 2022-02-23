@@ -1,0 +1,75 @@
+.services {
+    .contactInv {
+        color: $mainFontColor;
+        text-align: center;
+        margin: 40px 0 0 0;
+
+        a {
+            color: $linkFontColor;
+
+            &:hover {
+                color: $linkHoverFontColor;
+            }
+        }
+    }
+
+    .servicesTiles {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+
+        .column {
+            width: calc(100% / 3);
+            padding: 0 15px;
+
+            .serviceBox {
+                padding: 20px 40px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                border-radius: 15px;
+                color: $servicesTilesFontColor;
+                transition: 300ms;
+
+                h5 {
+                    font-size: 20px;
+                    margin: 20px 0;
+                }
+
+                p {
+                    line-height: 1.6;
+                }
+
+                &.uxUi {
+                    background-color: $uxUiBgColor;
+                    box-shadow: 1px 2px 7px -1px $uxUiBgColor;
+                }
+
+                &.webDevelopment {
+                    background-color: $webDevelopmentBgColor;
+                    box-shadow: 1px 2px 7px -1px $webDevelopmentBgColor;
+                }
+
+                &.photography {
+                    background-color: $photograpgyBgColor;
+                    box-shadow: 1px 2px 7px -1px $photograpgyBgColor;
+                }
+
+                &:hover {
+                    transform: translateY(-5%);
+                }
+            }
+        }
+
+        @include forMobile {
+            flex-direction: column;
+            align-items: center;
+
+            .column {
+                width: 60%;
+                margin: 0 0 30px 0;
+            }
+        }
+    }
+}

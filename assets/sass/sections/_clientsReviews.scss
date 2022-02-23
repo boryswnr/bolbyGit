@@ -1,0 +1,73 @@
+.clientsReviews {
+  // delete bottom margin when next section is made
+  margin: 100px 0;
+
+  .reviewsSlider {
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .wrapper {
+      display: flex;
+      width: 55em;
+
+      .inner {
+        display: flex;
+        transition: all 500ms ease-in-out;
+        grid-gap: 8em;
+
+        .review {
+          min-width: 80%;
+          padding: 15px;
+          text-align: center;
+          margin: 0 0 0 85px;
+
+          img {
+            max-height: 90px;
+          }
+
+          h6 {
+            font-size: 18px;
+            font-weight: 700;
+            color: $mainFontColor;
+            margin: 5px 0;
+          }
+
+          .jobDesc {
+            color: $mainFontColor;
+            font-size: 14px;
+            margin: 0;
+          }
+
+          .opinion {
+            color: $mainFontColor;
+            background-color: $aboutCloudBg;
+            padding: 40px 80px;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+
+    .map {
+      text-align: center;
+
+      button {
+        height: 7px;
+        width: 9px;
+        background-color: #afabab;
+        border-radius: 20%;
+        cursor: pointer;
+        transition: 300ms;
+
+        &.active {
+          width: 27px;
+          background-color: $btnBgColor;
+        }
+      }
+    }
+  }
+}

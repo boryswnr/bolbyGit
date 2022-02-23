@@ -1,0 +1,168 @@
+.home {
+    background-color: $homeBgColor;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 70px 0;
+
+    .avatar {
+        display: block;
+        margin: 0 0 15px 0;
+        width: 108px;
+        height: 108px;
+    }
+
+    h1 {
+        color: $homeFontColor;
+        @include fluidTypeContainer(26px, 36px);
+        margin: 0 0 8px 0;
+        z-index: 2;
+    }
+
+    h2 {
+        color: $homeFontColor;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 0 24px 0;
+        z-index: 2;
+    }
+
+    .socials {
+        @include resetList;
+        display: flex;
+        z-index: 2;
+
+        li {
+            margin: 0 24px 0 0;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            a {
+                font-size: 20px;
+                color: $homeFontColor;
+
+                &:hover {
+                    color: $homeFontHoverColor;
+                }
+            }
+        }
+    }
+
+    .parallax {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        .layer {
+            position: absolute;
+
+            &.p1 {
+                left: 10%;
+                top: 10%;
+            }
+
+            &.p2 {
+                left: 25%;
+                top: 30%;
+            }
+
+            &.p3 {
+                left: 15%;
+                bottom: 30%;
+            }
+
+            &.p4 {
+                left: 10%;
+                bottom: 10%;
+            }
+
+            &.p5 {
+                left: 45%;
+                top: 10%;
+            }
+
+            &.p6 {
+                left: 40%;
+                bottom: 10%;
+            }
+
+            &.p7 {
+                top: 20%;
+                right: 30%;
+            }
+
+            &.p8 {
+                right: 30%;
+                bottom: 20%;
+            }
+
+            &.p9 {
+                right: 10%;
+                top: 10%;
+            }
+
+            &.p10 {
+                top: 45%;
+                right: 20%;
+            }
+
+            &.p11 {
+                bottom: 10%;
+                right: 10%;
+            }
+
+        }
+    }
+
+    .scrollDown {
+        position: absolute;
+        bottom: 15px;
+        border: solid 2px #fff;
+        border-radius: 16px;
+        display: block;
+        height: 26px;
+        width: 20px;
+        z-index: 3;
+        left: 50%;
+        transform: translate(-50%);
+
+        &::after {
+            content: "";
+            height: 4px;
+            width: 4px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: #fff;
+            z-index: 4;
+            left: 50%;
+            transform: translate(-50%);
+            animation: scrollJump 1.5s linear infinite;
+        }
+    }
+}
+
+@keyframes scrollJump {
+    0% {
+        top: 15%;
+    }
+
+    15% {
+        top: 50%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    100% {
+        top: 15%;
+    }
+}

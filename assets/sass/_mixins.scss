@@ -1,0 +1,28 @@
+@mixin resetList {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+@mixin fluidTypeContainer($min-value, $max-value) {
+    $min-vw: 320px;
+    $max-vw: 1140px;
+    $factor: 1 / ($max-vw - $min-vw) * ($max-value - $min-value);
+    $calc-value: unquote("#{ $min-value - ($min-vw * $factor) } + #{ 100vw * $factor }");
+
+    font-size: $min-value; // Fallback for older browsers
+    font-size: clamp(#{ if($min-value > $max-value, $max-value, $min-value) }, #{ $calc-value }, #{ if($min-value > $max-value, $min-value, $max-value) });
+}
+
+@mixin forTablet {
+    @media (max-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin forMobile {
+    @media (max-width: 725px) {
+        @content;
+    }
+
+}

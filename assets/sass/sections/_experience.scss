@@ -1,0 +1,106 @@
+.experience {
+    margin: 100px 0 0 0;
+
+    .experienceBoxes {
+        display: flex;
+
+        .column {
+            width: 50%;
+            padding: 0 15px;
+
+            .timeLine {
+                background-color: $timeLineBgColor;
+                color: $mainFontColor;
+                border-radius: 15px;
+                padding: 15px 15px 15px 70px;
+                box-shadow: 1px 2px 7px -1px rgba(0, 0, 0, 0.3);
+                position: relative;
+
+                &::before {
+                    content: "";
+                    height: 85%;
+                    width: 0;
+                    border-left: 2px solid $timeLineSidebarColor;
+                    position: absolute;
+                    left: 35px;
+                    top: 45px;
+                }
+
+                .timeLineEntry {
+                    position: relative;
+
+
+                    .timeStamp {
+                        font-size: 14px;
+
+                        &.school {
+                            &::before {
+                                content: "\f19d";
+                                font-family: FontAwesome;
+                                font-style: normal;
+                                font-weight: normal;
+                                text-decoration: inherit;
+                                color: $timeLineSidebarColor;
+                                font-size: 18px;
+                                padding-right: 0.5em;
+                                position: absolute;
+                                top: -10px;
+                                left: -45px;
+                                z-index: 5;
+                                padding: 5px 0;
+                                background-color: $timeLineBgColor;
+
+                                &:first-child {
+                                    padding: 0 0 5px 0;
+                                }
+                            }
+                        }
+
+                        &.work {
+                            &::before {
+                                content: "\f0b1";
+                                font-family: FontAwesome;
+                                font-style: normal;
+                                font-weight: normal;
+                                text-decoration: inherit;
+                                color: $timeLineSidebarColor;
+                                font-size: 18px;
+                                padding-right: 0.5em;
+                                position: absolute;
+                                top: -10px;
+                                left: -43px;
+                                z-index: 5;
+                                padding: 5px 0;
+                                background-color: $timeLineBgColor;
+
+                                &:first-child {
+                                    padding: 0 0 5px 0;
+                                }
+                            }
+                        }
+                    }
+
+                    .occupationName {
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin: 10px 0;
+                    }
+
+                    .occupationDesc {
+                        margin: 0 0 40px 0;
+                    }
+                }
+            }
+        }
+
+        @include forMobile {
+            flex-direction: column;
+            align-items: center;
+
+            .column {
+                width: 60%;
+                margin: 0 0 30px 0;
+            }
+        }
+    }
+}

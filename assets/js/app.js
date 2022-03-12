@@ -30,3 +30,24 @@ buttonsWrapper.addEventListener("click", (e) => {
     }
   }
 });
+
+let activeButton = document.querySelector(".active");
+
+function nextReview() {
+  setTimeout(console.log("switch"), 5000);
+  if (activeButton.classList.contains("first")) {
+    Array.from(buttonsWrapper.children).forEach((item) =>
+      item.classList.remove("active")
+    );
+    document.querySelector(".second").classList.add("active");
+    slides.style.transform = "translateX(-105%)";
+  } else if (activeButton.classList.contains("second")) {
+    Array.from(buttonsWrapper.children).forEach((item) =>
+      item.classList.remove("active")
+    );
+    document.querySelector(".first").classList.add("active");
+    slides.style.transform = "translateX(-0%)";
+  }
+}
+
+setInterval(nextReview, 5000);

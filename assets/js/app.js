@@ -1,3 +1,4 @@
+const timeout = async time => await new Promise(resolve => setTimeout(() => resolve(), time));
 let parallax = document.querySelector(".parallax");
 
 let parallaxInstance = new Parallax(parallax, {
@@ -32,22 +33,30 @@ buttonsWrapper.addEventListener("click", (e) => {
 });
 
 let activeButton = document.querySelector(".active");
+let intervId;
 
 function nextReview() {
-  setTimeout(console.log("switch"), 5000);
   if (activeButton.classList.contains("first")) {
     Array.from(buttonsWrapper.children).forEach((item) =>
       item.classList.remove("active")
     );
-    document.querySelector(".second").classList.add("active");
+    document.getElementById("secondBtn").classList.add("active");
     slides.style.transform = "translateX(-105%)";
+    activeButton = document.querySelector(".active");
   } else if (activeButton.classList.contains("second")) {
     Array.from(buttonsWrapper.children).forEach((item) =>
       item.classList.remove("active")
     );
-    document.querySelector(".first").classList.add("active");
+    document.getElementById("firstBtn").classList.add("active");
     slides.style.transform = "translateX(-0%)";
+    activeButton = document.querySelector(".active");
   }
 }
 
-setInterval(nextReview, 5000);
+
+
+function reviewTimer() {
+    intervId = setInterval(nextReview, 4000);
+}
+
+reviewTimer();

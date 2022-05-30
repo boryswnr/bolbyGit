@@ -1,748 +1,634 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sassy</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="dist/hamburgers.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <aside class="menu">
-      <div class="logo">
-        <a href="#">
-          <img src="assets/img/logo.svg" alt="logoBolby" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio website</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="dist/hamburgers.css" rel="stylesheet" />
+</head>
+
+<body>
+  <aside class="menu">
+    <div class="logo">
+      <a href="#">
+        <img src="assets/img/logo.svg" alt="logoBolby" />
+      </a>
+    </div>
+
+    <ul class="navList">
+      <li>
+        <a href="#home">
+          <i class="fa-solid fa-house"></i>
+          Home
         </a>
-      </div>
+      </li>
 
-      <ul class="navList">
-        <li>
-          <a href="#">
-            <i class="fa-solid fa-house"></i>
-            Home
-          </a>
-        </li>
+      <li>
+        <a href="#about">
+          <i class="fa-regular fa-address-card"></i>
+          About
+        </a>
+      </li>
+      <li>
+        <a href="#services">
+          <i class="fa-solid fa-briefcase"></i>
+          Services
+        </a>
+      </li>
+      <li>
+        <a href="#experience">
+          <i class="fa-solid fa-user-graduate"></i>
+          Experience
+        </a>
+      </li>
+      <li>
+        <a href="#works">
+          <i class="fa-solid fa-laptop-code"></i>
+          Works
+        </a>
+      </li>
+      <li>
+        <a href="#reviews">
+          <i class="fa-solid fa-quote-left"></i>
+          Reviews
+        </a>
+      </li>
+      <li>
+        <a href="#contact">
+          <i class="fa-solid fa-voicemail"></i>
+          Contact
+        </a>
+      </li>
+    </ul>
 
+    <p class="copyright">&copy; 2022 BorysW</p>
+  </aside>
+
+  <main>
+    <button class="hamburger hamburger--minus" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <section class="home" id="home">
+      <img src="assets/img/avatar-1.svg" alt="" class="avatar" />
+      <h1>Borys</h1>
+      <h2>I'm a Front-End dev</h2>
+      <ul class="socials">
         <li>
-          <a href="#">
-            <i class="fa-solid fa-house"></i>
-            About
-          </a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </li>
         <li>
-          <a href="#">
-            <i class="fa-solid fa-house"></i>
-            Services
-          </a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </li>
         <li>
-          <a href="#">
-            <i class="fa-solid fa-house"></i>
-            Experience
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa-solid fa-house"></i>
-            Works
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa-solid fa-house"></i>
-            Blog
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa-solid fa-house"></i>
-            Contact
-          </a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
         </li>
       </ul>
 
-      <p class="copyright">&copy; 2022 BorysW</p>
-    </aside>
+      <div class="parallax" data-relative-input="true">
+        <svg width="27" height="29" data-depth="0.3" class="layer p1" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21.15625.60099c4.37954 3.67487 6.46544 9.40612 5.47254 15.03526-.9929 5.62915-4.91339 10.30141-10.2846 12.25672-5.37122 1.9553-11.3776.89631-15.75715-2.77856l2.05692-2.45134c3.50315 2.93948 8.3087 3.78663 12.60572 2.22284 4.297-1.5638 7.43381-5.30209 8.22768-9.80537.79387-4.50328-.8749-9.08872-4.37803-12.02821L21.15625.60099z"
+            fill="#FFD15C" fill-rule="evenodd" />
+        </svg>
 
-    <main>
-      <button class="hamburger hamburger--minus" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
+        <svg width="26" height="26" data-depth="0.2" class="layer p2" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z" stroke="#FF4C60" stroke-width="3" fill="none"
+            fill-rule="evenodd" />
+        </svg>
 
-      <section class="home">
-        <img src="assets/img/avatar-1.svg" alt="" class="avatar" />
-        <h1>Borys</h1>
-        <h2>I'm a Front-End dev</h2>
-        <ul class="socials">
+        <svg width="30" height="25" data-depth="0.3" class="layer p3" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M.1436 8.9282C3.00213 3.97706 8.2841.92763 14.00013.92796c5.71605.00032 10.9981 3.04992 13.85641 8 2.8583 4.95007 2.8584 11.0491-.00014 16.00024l-2.77128-1.6c2.28651-3.96036 2.28631-8.84002.00011-12.8002-2.2862-3.96017-6.5124-6.40017-11.08513-6.4-4.57271.00018-8.79872 2.43984-11.08524 6.4002l-2.77128-1.6z"
+            fill="#44D7B6" fill-rule="evenodd" />
+        </svg>
+
+        <svg width="15" height="23" data-depth="0.6" class="layer p4" xmlns="http://www.w3.org/2000/svg">
+          <rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#FFD15C"
+            fill-rule="evenodd" />
+        </svg>
+
+        <svg width="15" height="23" data-depth="0.2" class="layer p5" xmlns="http://www.w3.org/2000/svg">
+          <rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5"
+            fill-rule="evenodd" />
+        </svg>
+
+        <svg width="49" height="17" data-depth="0.5" class="layer p6" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#FF4C60" fill-rule="evenodd">
+            <path
+              d="M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z" />
+            <path
+              d="M23.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C46.1175 5.50106 48.5 10.78292 48.5 16.5H46c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0-3.09375 2.28651-5 6.51232-5 11.08535h-2.5z" />
+          </g>
+        </svg>
+
+        <svg width="26" height="26" data-depth="0.4" class="layer p7" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z" stroke="#FFD15C" stroke-width="3" fill="none"
+            fill-rule="evenodd" />
+        </svg>
+
+        <svg width="19" height="21" data-depth="0.3" class="layer p8" xmlns="http://www.w3.org/2000/svg">
+          <rect transform="rotate(-40 6.25252 10.12626)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5"
+            fill-rule="evenodd" />
+        </svg>
+
+        <svg width="30" height="25" data-depth="0.3" data-depth-y="-1.30" class="layer p9"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M29.8564 16.0718c-2.85854 4.95114-8.1405 8.00057-13.85654 8.00024-5.71605-.00032-10.9981-3.04992-13.85641-8-2.8583-4.95007-2.8584-11.0491.00014-16.00024l2.77128 1.6c-2.28651 3.96036-2.28631 8.84002-.00011 12.8002 2.2862 3.96017 6.5124 6.40017 11.08513 6.4 4.57271-.00018 8.79872-2.43984 11.08524-6.4002l2.77128 1.6z"
+            fill="#6C6CE5" fill-rule="evenodd" />
+        </svg>
+
+        <svg width="47" height="29" data-depth="0.2" class="layer p10" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#44D7B6" fill-rule="evenodd">
+            <path
+              d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z" />
+            <path
+              d="M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z" />
+          </g>
+        </svg>
+
+        <svg width="33" height="20" data-depth="0.5" class="layer p11" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z"
+            fill="#FFD15C" fill-rule="evenodd" />
+        </svg>
+      </div>
+
+      <a href="#" class="scrollDown"> </a>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="globalHeader">About me</h2>
+
+        <div class="aboutBox">
+          <div class="photo">
+            <img src="assets/img/avatar-1.svg" alt="sameAvatar" />
+          </div>
+
+          <div class="cloud">
+            <div class="bg">
+              <div class="desc">
+                <p>
+                  I am Bolby Doe, web developer from London, United Kingdom. I
+                  have rich experience in web site design and building and
+                  customization, also I am good at WordPress.
+                </p>
+
+                <a href="#" class="btn">Download CV</a>
+              </div>
+
+              <div class="skills">
+                <div class="skillName">
+                  <span class="name">Development</span>
+                  <span class="percent">40%</span>
+                </div>
+                <div class="progress">
+                  <span class="bar yellow" style="width: 40%"></span>
+                </div>
+
+                <div class="skillName">
+                  <span class="name">CSS</span>
+                  <span class="percent">69%</span>
+                </div>
+                <div class="progress">
+                  <span class="bar red" style="width: 69%"></span>
+                </div>
+
+                <div class="skillName">
+                  <span class="name">UX/UI Design</span>
+                  <span class="percent">420%</span>
+                </div>
+                <div class="progress">
+                  <span class="bar green" style="width: 100%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="globalHeader">
+          <h3>Services</h3>
+        </div>
+
+        <div class="servicesTiles">
+          <div class="column">
+            <div class="serviceBox uxUi">
+              <img src="assets/img/service-1.svg" alt="" />
+              <h5>UX/UI design</h5>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean
+                commodo ligula eget.
+              </p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="serviceBox webDevelopment">
+              <img src="assets/img/service-2.svg" alt="" />
+              <h5>Web development</h5>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean
+                commodo ligula eget.
+              </p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="serviceBox photography">
+              <img src="assets/img/service-3.svg" alt="" />
+              <h5>Photography</h5>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean
+                commodo ligula eget.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p class="contactInv">
+          Looking for a custom job? <a href="#">Click here</a> to contact me!
+          👋
+        </p>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="globalHeader">Experience</div>
+
+        <div class="experienceBoxes">
+          <div class="column">
+            <div class="timeLine">
+              <div class="timeLineEntry">
+                <p class="timeStamp school">2019 - present</p>
+
+                <h6 class="occupationName">Academic Degree</h6>
+
+                <p class="occupationDesc">
+                  Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec
+                  admodum perfecto.
+                </p>
+              </div>
+
+              <div class="timeLineEntry">
+                <p class="timeStamp school">2016 - 2019</p>
+
+                <h6 class="occupationName">Bachelors Degree</h6>
+
+                <p class="occupationDesc">
+                  Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec
+                  admodum perfecto.
+                </p>
+              </div>
+
+              <div class="timeLineEntry">
+                <p class="timeStamp school">2013 - 2016</p>
+
+                <h6 class="occupationName">Middle School</h6>
+
+                <p class="occupationDesc">
+                  Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec
+                  admodum perfecto.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="timeLine">
+              <div class="timeLineEntry">
+                <p class="timeStamp work">2019 - present</p>
+
+                <h6 class="occupationName">Job 1</h6>
+
+                <p class="occupationDesc">
+                  Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec
+                  admodum perfecto.
+                </p>
+              </div>
+
+              <div class="timeLineEntry">
+                <p class="timeStamp work">2017 - 2019</p>
+
+                <h6 class="occupationName">Job 2</h6>
+
+                <p class="occupationDesc">
+                  Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec
+                  admodum perfecto.
+                </p>
+              </div>
+
+              <div class="timeLineEntry">
+                <p class="timeStamp work">2015 - 2017</p>
+
+                <h6 class="occupationName">Job 3</h6>
+
+                <p class="occupationDesc">
+                  Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec
+                  admodum perfecto.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recentWorks" id="works">
+      <div class="container">
+        <div class="globalHeader">
+          <h3>Recent works - !Work in Progress!</h3>
+        </div>
+
+        <ul class="worksCategories">
           <li>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#">Everything</a>
           </li>
+
           <li>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#">Art</a>
           </li>
+
           <li>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#">Design</a>
+          </li>
+
+          <li>
+            <a href="#">Creative</a>
+          </li>
+
+          <li>
+            <a href="#">Branding</a>
           </li>
         </ul>
 
-        <div class="parallax" data-relative-input="true">
-          <svg
-            width="27"
-            height="29"
-            data-depth="0.3"
-            class="layer p1"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M21.15625.60099c4.37954 3.67487 6.46544 9.40612 5.47254 15.03526-.9929 5.62915-4.91339 10.30141-10.2846 12.25672-5.37122 1.9553-11.3776.89631-15.75715-2.77856l2.05692-2.45134c3.50315 2.93948 8.3087 3.78663 12.60572 2.22284 4.297-1.5638 7.43381-5.30209 8.22768-9.80537.79387-4.50328-.8749-9.08872-4.37803-12.02821L21.15625.60099z"
-              fill="#FFD15C"
-              fill-rule="evenodd"
-            />
-          </svg>
+        <div class="worksGallery">
+          <div class="workTile art">
+            <a href="#">
+              <div class="workImg">
+                <img src="assets/img/works_1.svg" alt="" />
+                <div class="worksOverlay">
+                  <h5>Project Managment Illustration</h5>
 
-          <svg
-            width="26"
-            height="26"
-            data-depth="0.2"
-            class="layer p2"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z"
-              stroke="#FF4C60"
-              stroke-width="3"
-              fill="none"
-              fill-rule="evenodd"
-            />
-          </svg>
+                  <p class="category">Art</p>
 
-          <svg
-            width="30"
-            height="25"
-            data-depth="0.3"
-            class="layer p3"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M.1436 8.9282C3.00213 3.97706 8.2841.92763 14.00013.92796c5.71605.00032 10.9981 3.04992 13.85641 8 2.8583 4.95007 2.8584 11.0491-.00014 16.00024l-2.77128-1.6c2.28651-3.96036 2.28631-8.84002.00011-12.8002-2.2862-3.96017-6.5124-6.40017-11.08513-6.4-4.57271.00018-8.79872 2.43984-11.08524 6.4002l-2.77128-1.6z"
-              fill="#44D7B6"
-              fill-rule="evenodd"
-            />
-          </svg>
-
-          <svg
-            width="15"
-            height="23"
-            data-depth="0.6"
-            class="layer p4"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              transform="rotate(30 9.86603 10.13397)"
-              x="7"
-              width="3"
-              height="25"
-              rx="1.5"
-              fill="#FFD15C"
-              fill-rule="evenodd"
-            />
-          </svg>
-
-          <svg
-            width="15"
-            height="23"
-            data-depth="0.2"
-            class="layer p5"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              transform="rotate(30 9.86603 10.13397)"
-              x="7"
-              width="3"
-              height="25"
-              rx="1.5"
-              fill="#6C6CE5"
-              fill-rule="evenodd"
-            />
-          </svg>
-
-          <svg
-            width="49"
-            height="17"
-            data-depth="0.5"
-            class="layer p6"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g fill="#FF4C60" fill-rule="evenodd">
-              <path
-                d="M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z"
-              />
-              <path
-                d="M23.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C46.1175 5.50106 48.5 10.78292 48.5 16.5H46c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0-3.09375 2.28651-5 6.51232-5 11.08535h-2.5z"
-              />
-            </g>
-          </svg>
-
-          <svg
-            width="26"
-            height="26"
-            data-depth="0.4"
-            class="layer p7"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z"
-              stroke="#FFD15C"
-              stroke-width="3"
-              fill="none"
-              fill-rule="evenodd"
-            />
-          </svg>
-
-          <svg
-            width="19"
-            height="21"
-            data-depth="0.3"
-            class="layer p8"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              transform="rotate(-40 6.25252 10.12626)"
-              x="7"
-              width="3"
-              height="25"
-              rx="1.5"
-              fill="#6C6CE5"
-              fill-rule="evenodd"
-            />
-          </svg>
-
-          <svg
-            width="30"
-            height="25"
-            data-depth="0.3"
-            data-depth-y="-1.30"
-            class="layer p9"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M29.8564 16.0718c-2.85854 4.95114-8.1405 8.00057-13.85654 8.00024-5.71605-.00032-10.9981-3.04992-13.85641-8-2.8583-4.95007-2.8584-11.0491.00014-16.00024l2.77128 1.6c-2.28651 3.96036-2.28631 8.84002-.00011 12.8002 2.2862 3.96017 6.5124 6.40017 11.08513 6.4 4.57271-.00018 8.79872-2.43984 11.08524-6.4002l2.77128 1.6z"
-              fill="#6C6CE5"
-              fill-rule="evenodd"
-            />
-          </svg>
-
-          <svg
-            width="47"
-            height="29"
-            data-depth="0.2"
-            class="layer p10"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g fill="#44D7B6" fill-rule="evenodd">
-              <path
-                d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z"
-              />
-              <path
-                d="M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z"
-              />
-            </g>
-          </svg>
-
-          <svg
-            width="33"
-            height="20"
-            data-depth="0.5"
-            class="layer p11"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z"
-              fill="#FFD15C"
-              fill-rule="evenodd"
-            />
-          </svg>
-        </div>
-
-        <a href="#" class="scrollDown"> </a>
-      </section>
-
-      <section class="about">
-        <div class="container">
-          <h2 class="globalHeader">About me</h2>
-
-          <div class="aboutBox">
-            <div class="photo">
-              <img src="assets/img/avatar-1.svg" alt="sameAvatar" />
-            </div>
-
-            <div class="cloud">
-              <div class="bg">
-                <div class="desc">
-                  <p>
-                    I am Bolby Doe, web developer from London, United Kingdom. I
-                    have rich experience in web site design and building and
-                    customization, also I am good at WordPress.
-                  </p>
-
-                  <a href="#" class="btn">Download CV</a>
-                </div>
-
-                <div class="skills">
-                  <div class="skillName">
-                    <span class="name">Development</span>
-                    <span class="percent">40%</span>
-                  </div>
-                  <div class="progress">
-                    <span class="bar yellow" style="width: 40%"></span>
-                  </div>
-
-                  <div class="skillName">
-                    <span class="name">CSS</span>
-                    <span class="percent">69%</span>
-                  </div>
-                  <div class="progress">
-                    <span class="bar red" style="width: 69%"></span>
-                  </div>
-
-                  <div class="skillName">
-                    <span class="name">UX/UI Design</span>
-                    <span class="percent">420%</span>
-                  </div>
-                  <div class="progress">
-                    <span class="bar green" style="width: 100%"></span>
-                  </div>
+                  <i class="fas fa-search-plus"></i>
                 </div>
               </div>
+            </a>
+          </div>
+
+          <div class="workTile creative">
+            <a href="#">
+              <div class="workImg">
+                <img src="assets/img/works_2.svg" alt="" />
+                <div class="worksOverlay">
+                  <h5>Guest App Walktrough Screens</h5>
+
+                  <p class="category">Creative</p>
+
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="workTile branding">
+            <a href="#">
+              <div class="workImg">
+                <img src="assets/img/works_3.svg" alt="" />
+                <div class="worksOverlay">
+                  <h5>Deliver App Wireframe</h5>
+
+                  <p class="category">Branding</p>
+
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="workTile creative">
+            <a href="#">
+              <div class="workImg">
+                <img src="assets/img/works_4.svg" alt="" />
+                <div class="worksOverlay">
+                  <h5>Onboarding Motivation</h5>
+
+                  <p class="category">Creative</p>
+
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="workTile art branding">
+            <a href="#">
+              <div class="workImg">
+                <img src="assets/img/works_5.svg" alt="" />
+                <div class="worksOverlay">
+                  <h5>iMac Mockup Design</h5>
+
+                  <p class="category">Art, Branding</p>
+
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="workTile creative design">
+            <a href="#">
+              <div class="workImg">
+                <img src="assets/img/works_6.svg" alt="" />
+                <div class="worksOverlay">
+                  <h5>Game Store App Concept</h5>
+
+                  <p class="category">Creative, Design</p>
+
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="workTile art">
+            <a href="#">
+              <div class="workImg">
+                <img src="assets/img/works_3.svg" alt="" />
+                <div class="worksOverlay">
+                  <h5>Project Managment Illustration</h5>
+
+                  <p class="category">Art</p>
+
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="workTile creative">
+            <a href="#">
+              <div class="workImg">
+                <img src="assets/img/works_1.svg" alt="" />
+                <div class="worksOverlay">
+                  <h5>Guest App Walktrough Screens</h5>
+
+                  <p class="category">Creative</p>
+
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="workTile branding">
+            <a href="#">
+              <div class="workImg">
+                <img src="assets/img/works_2.svg" alt="" />
+                <div class="worksOverlay">
+                  <h5>Delivery App Wireframe</h5>
+
+                  <p class="category">Branding</p>
+
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricingPlans">
+      <div class="container">
+        <div class="globalHeader">
+          <h4>Pricing Plans</h4>
+        </div>
+
+        <div class="offers">
+          <div class="column">
+            <div class="pricingOffer">
+              <img src="assets/img/price-1.svg" alt="" />
+              <h6>Basic</h6>
+
+              <p>A Simple option but powerful to manage your business</p>
+
+              <p>Email support</p>
+
+              <p class="price">
+                <span><sup>$</sup>9</span> Month
+              </p>
+
+              <a href="#" class="btn"> Get started </a>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="pricingOffer">
+              <img src="assets/img/price-2.svg" alt="" />
+              <h6>Premium</h6>
+
+              <p>
+                Unlimited product including apps integrations and more
+                features
+              </p>
+
+              <p>Mon-Fri support</p>
+
+              <p class="price">
+                <span><sup>$</sup>49</span> Month
+              </p>
+
+              <a href="#" class="btn"> Get started </a>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="pricingOffer">
+              <img src="assets/img/price-3.svg" alt="" />
+              <h6>Ultimate</h6>
+
+              <p>A wise option for large companies and individuals</p>
+
+              <p>24/7 support</p>
+
+              <p class="price">
+                <span><sup>$</sup>99</span> Month
+              </p>
+
+              <a href="#" class="btn"> Get started </a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="services">
-        <div class="container">
-          <div class="globalHeader">
-            <h3>Services</h3>
-          </div>
+    <section class="clientsReviews" id="reviews">
+      <div class="container">
+        <div class="globalHeader">
+          <h3>Clients &amp; Reviews</h3>
+        </div>
 
-          <div class="servicesTiles">
-            <div class="column">
-              <div class="serviceBox uxUi">
-                <img src="assets/img/service-1.svg" alt="" />
-                <h5>UX/UI design</h5>
+        <div class="reviewsSlider">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="review importantComp">
+                <img src="assets/img/avatar-3.svg" alt="" class="avatar" />
+                <h6>John Doe</h6>
+                <p class="jobDesc">'Big deal' in Important Company LTD.</p>
 
-                <p>
-                  Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean
-                  commodo ligula eget.
+                <p class="opinion">
+                  I enjoy working with the theme and learn so much. You guys
+                  make the process fun and interesting. Good luck! 🔥
                 </p>
               </div>
-            </div>
 
-            <div class="column">
-              <div class="serviceBox webDevelopment">
-                <img src="assets/img/service-2.svg" alt="" />
-                <h5>Web development</h5>
+              <div class="review startup">
+                <img src="assets/img/avatar-1.svg" alt="" class="avatar" />
+                <h6>John Doe</h6>
+                <p class="jobDesc">'Hotshot' in SupaOriginal Startup</p>
 
-                <p>
-                  Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean
-                  commodo ligula eget.
-                </p>
-              </div>
-            </div>
-
-            <div class="column">
-              <div class="serviceBox photography">
-                <img src="assets/img/service-3.svg" alt="" />
-                <h5>Photography</h5>
-
-                <p>
-                  Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean
-                  commodo ligula eget.
+                <p class="opinion">
+                  I enjoy working with the theme and learn so much. You guys
+                  make the process fun and interesting. Good luck! 🔥
                 </p>
               </div>
             </div>
           </div>
 
-          <p class="contactInv">
-            Looking for a custom job? <a href="#">Click here</a> to contact me!
-            👋
-          </p>
-        </div>
-      </section>
-
-      <section class="experience">
-        <div class="container">
-          <div class="globalHeader">Experience</div>
-
-          <div class="experienceBoxes">
-            <div class="column">
-              <div class="timeLine">
-                <div class="timeLineEntry">
-                  <p class="timeStamp school">2019 - present</p>
-
-                  <h6 class="occupationName">Academic Degree</h6>
-
-                  <p class="occupationDesc">
-                    Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec
-                    admodum perfecto.
-                  </p>
-                </div>
-
-                <div class="timeLineEntry">
-                  <p class="timeStamp school">2016 - 2019</p>
-
-                  <h6 class="occupationName">Bachelors Degree</h6>
-
-                  <p class="occupationDesc">
-                    Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec
-                    admodum perfecto.
-                  </p>
-                </div>
-
-                <div class="timeLineEntry">
-                  <p class="timeStamp school">2013 - 2016</p>
-
-                  <h6 class="occupationName">Middle School</h6>
-
-                  <p class="occupationDesc">
-                    Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec
-                    admodum perfecto.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="column">
-              <div class="timeLine">
-                <div class="timeLineEntry">
-                  <p class="timeStamp work">2019 - present</p>
-
-                  <h6 class="occupationName">Job 1</h6>
-
-                  <p class="occupationDesc">
-                    Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec
-                    admodum perfecto.
-                  </p>
-                </div>
-
-                <div class="timeLineEntry">
-                  <p class="timeStamp work">2017 - 2019</p>
-
-                  <h6 class="occupationName">Job 2</h6>
-
-                  <p class="occupationDesc">
-                    Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec
-                    admodum perfecto.
-                  </p>
-                </div>
-
-                <div class="timeLineEntry">
-                  <p class="timeStamp work">2015 - 2017</p>
-
-                  <h6 class="occupationName">Job 3</h6>
-
-                  <p class="occupationDesc">
-                    Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec
-                    admodum perfecto.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div class="map">
+            <button class="first active" id="firstBtn"></button>
+            <button class="second" id="secondBtn"></button>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section class="recentWorks">
-        <div class="container">
-          <div class="globalHeader">
-            <h3>Recent works - !Work in Progress!</h3>
-          </div>
+  <script src="assets/js/parallax.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
 
-          <ul class="worksCategories">
-            <li>
-              <a href="#">Everything</a>
-            </li>
-
-            <li>
-              <a href="#">Art</a>
-            </li>
-
-            <li>
-              <a href="#">Design</a>
-            </li>
-
-            <li>
-              <a href="#">Creative</a>
-            </li>
-
-            <li>
-              <a href="#">Branding</a>
-            </li>
-          </ul>
-
-          <div class="worksGallery">
-            <div class="workTile art">
-              <a href="#">
-                <div class="workImg">
-                  <img src="assets/img/works_1.svg" alt="" />
-                  <div class="worksOverlay">
-                    <h5>Project Managment Illustration</h5>
-
-                    <p class="category">Art</p>
-
-                    <i class="fas fa-search-plus"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="workTile creative">
-              <a href="#">
-                <div class="workImg">
-                  <img src="assets/img/works_2.svg" alt="" />
-                  <div class="worksOverlay">
-                    <h5>Guest App Walktrough Screens</h5>
-
-                    <p class="category">Creative</p>
-
-                    <i class="fas fa-search-plus"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="workTile branding">
-              <a href="#">
-                <div class="workImg">
-                  <img src="assets/img/works_3.svg" alt="" />
-                  <div class="worksOverlay">
-                    <h5>Deliver App Wireframe</h5>
-
-                    <p class="category">Branding</p>
-
-                    <i class="fas fa-search-plus"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="workTile creative">
-              <a href="#">
-                <div class="workImg">
-                  <img src="assets/img/works_4.svg" alt="" />
-                  <div class="worksOverlay">
-                    <h5>Onboarding Motivation</h5>
-
-                    <p class="category">Creative</p>
-
-                    <i class="fas fa-search-plus"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="workTile art branding">
-              <a href="#">
-                <div class="workImg">
-                  <img src="assets/img/works_5.svg" alt="" />
-                  <div class="worksOverlay">
-                    <h5>iMac Mockup Design</h5>
-
-                    <p class="category">Art, Branding</p>
-
-                    <i class="fas fa-search-plus"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="workTile creative design">
-              <a href="#">
-                <div class="workImg">
-                  <img src="assets/img/works_6.svg" alt="" />
-                  <div class="worksOverlay">
-                    <h5>Game Store App Concept</h5>
-
-                    <p class="category">Creative, Design</p>
-
-                    <i class="fas fa-search-plus"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="workTile art">
-              <a href="#">
-                <div class="workImg">
-                  <img src="assets/img/works_3.svg" alt="" />
-                  <div class="worksOverlay">
-                    <h5>Project Managment Illustration</h5>
-
-                    <p class="category">Art</p>
-
-                    <i class="fas fa-search-plus"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="workTile creative">
-              <a href="#">
-                <div class="workImg">
-                  <img src="assets/img/works_1.svg" alt="" />
-                  <div class="worksOverlay">
-                    <h5>Guest App Walktrough Screens</h5>
-
-                    <p class="category">Creative</p>
-
-                    <i class="fas fa-search-plus"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="workTile branding">
-              <a href="#">
-                <div class="workImg">
-                  <img src="assets/img/works_2.svg" alt="" />
-                  <div class="worksOverlay">
-                    <h5>Delivery App Wireframe</h5>
-
-                    <p class="category">Branding</p>
-
-                    <i class="fas fa-search-plus"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="pricingPlans">
-        <div class="container">
-          <div class="globalHeader">
-            <h4>Pricing Plans</h4>
-          </div>
-
-          <div class="offers">
-            <div class="column">
-              <div class="pricingOffer">
-                <img src="assets/img/price-1.svg" alt="" />
-                <h6>Basic</h6>
-
-                <p>A Simple option but powerful to manage your business</p>
-
-                <p>Email support</p>
-
-                <p class="price">
-                  <span><sup>$</sup>9</span> Month
-                </p>
-
-                <a href="#" class="btn"> Get started </a>
-              </div>
-            </div>
-
-            <div class="column">
-              <div class="pricingOffer">
-                <img src="assets/img/price-2.svg" alt="" />
-                <h6>Premium</h6>
-
-                <p>
-                  Unlimited product including apps integrations and more
-                  features
-                </p>
-
-                <p>Mon-Fri support</p>
-
-                <p class="price">
-                  <span><sup>$</sup>49</span> Month
-                </p>
-
-                <a href="#" class="btn"> Get started </a>
-              </div>
-            </div>
-
-            <div class="column">
-              <div class="pricingOffer">
-                <img src="assets/img/price-3.svg" alt="" />
-                <h6>Ultimate</h6>
-
-                <p>A wise option for large companies and individuals</p>
-
-                <p>24/7 support</p>
-
-                <p class="price">
-                  <span><sup>$</sup>99</span> Month
-                </p>
-
-                <a href="#" class="btn"> Get started </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="clientsReviews">
-        <div class="container">
-          <div class="globalHeader">
-            <h3>Clients &amp; Reviews</h3>
-          </div>
-
-          <div class="reviewsSlider">
-            <div class="wrapper">
-              <div class="inner">
-                <div class="review importantComp">
-                  <img src="assets/img/avatar-3.svg" alt="" class="avatar" />
-                  <h6>John Doe</h6>
-                  <p class="jobDesc">'Big deal' in Important Company LTD.</p>
-
-                  <p class="opinion">
-                    I enjoy working with the theme and learn so much. You guys
-                    make the process fun and interesting. Good luck! 🔥
-                  </p>
-                </div>
-
-                <div class="review startup">
-                  <img src="assets/img/avatar-1.svg" alt="" class="avatar" />
-                  <h6>John Doe</h6>
-                  <p class="jobDesc">'Hotshot' in SupaOriginal Startup</p>
-
-                  <p class="opinion">
-                    I enjoy working with the theme and learn so much. You guys
-                    make the process fun and interesting. Good luck! 🔥
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="map">
-              <button class="first active" id="firstBtn"></button>
-              <button class="second" id="secondBtn"></button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script src="assets/js/parallax.js"></script>
-    <script src="assets/js/app.js"></script>
-  </body>
 </html>

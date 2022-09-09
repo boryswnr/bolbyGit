@@ -60,3 +60,34 @@ function reviewTimer() {
 }
 
 reviewTimer();
+
+const project = document.querySelector(".workCategory");
+const projectList = document.querySelectorAll(".workCategory");
+let classToDisplay = "all";
+const projectTiles = document.querySelectorAll(".workTile");
+const listItems = document.querySelectorAll(".workCategory");
+
+function sortItems(item) {
+    if (!(item.classList.contains(classToDisplay.toLowerCase()))) {
+        //console.log("sortItem items classlist:", item.classList);
+        item.classList.add("hide");
+    }
+}
+
+listItems.forEach(element => {
+    element.addEventListener("click", e => {
+        projectList.forEach(item => item.classList.remove("activeItem"));
+        e.path[0].classList.add("activeItem");
+      classToDisplay = e.path[0].innerText.toLowerCase();
+      console.log("classToDisplay:", classToDisplay);
+        if (classToDisplay === "everything") {
+            projectTiles.forEach(item => {
+                console.log("item", item)
+                item.classList.remove("hide")
+            });
+        } else {
+            projectTiles.forEach(tile => tile.classList.remove("hide"));
+            projectTiles.forEach(element => sortItems(element));
+        }        
+    })
+})
